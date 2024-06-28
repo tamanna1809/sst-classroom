@@ -35,15 +35,13 @@ function App() {
 
   console.log(a, b);
   return (
-    <CartContext.Provider value={{cart,increaseQuantity,decreaseQuantity}}>
+    <CartContext.Provider value={{ cart, increaseQuantity, decreaseQuantity}}>
       <div className="App">
-      <Products cart={cart} increaseQuantity={increaseQuantity} decreaseQuantity={decreaseQuantity} />
-      <Cart /> 
-      </div >
+        <Products />
+        <Cart />
+      </div>
     </CartContext.Provider>
-    
   );
-  
 }
 
 export default App;
